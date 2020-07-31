@@ -10,39 +10,39 @@
     <div class="questions">
     	<h1>Survey [1-5]</h1>
         <div class="question">
-        	<h3>Which method of study do you prefer?</h3>
-        	<input type="radio" name="study" id="online" value="online">
+        	<h3>Which method of study do you prefer?<span style="color: red">*</span></h3>
+        	<input type="radio" name="study" id="online" value="online" required>
             <label for="online">Online Method</label><br>
-            <input type="radio" name="study" id="offline" value="offline">
+            <input type="radio" name="study" id="offline" value="offline" required>
             <label for="offline">Offline Method</label><br>
         </div>
-        <div class="question">
-            <h3>What difficulties do you face while studying online?</h3>
-            <input type="checkbox" name="diff1" id="diff1" value="external">
+        <div class="question" required>
+            <h3>What difficulties do you face while studying online</h3>
+            <input type="checkbox" name="diff" id="diff1" value="external">
             <label for="diff1">External Disturbance</label><br>
-            <input type="checkbox" name="diff2" id="diff2" value="difficult">
+            <input type="checkbox" name="diff" id="diff2" value="difficult">
             <label for="diff2">Difficult to Understand</label><br>
-            <input type="checkbox" name="diff3" id="diff3" value="network">
+            <input type="checkbox" name="diff" id="diff3" value="network">
             <label for="diff3">Network & Device Issues</label><br>
-            <input type="checkbox" name="diff4" id="diff4" value="other">
+            <input type="checkbox" name="diff" id="diff4" value="other">
             <label for="diff4">Other</label><br>
         </div>
         <div class="question">
-        	<h3>How are the students coping up with the online classes?</h3>
-            <input type="radio" name="online_class" id="online_class" value="Easy">
+        	<h3>How are the students coping up with the online classes?<span style="color: red">*</span></h3>
+            <input type="radio" name="online_class" id="online_class" value="Easy" required>
             <label for="online_class">Easy</label><br>
-            <input type="radio" name="online_class" id="hard" value="Not Easy">
+            <input type="radio" name="online_class" id="hard" value="Not Easy" required>
             <label for="hard">Not Easy</label><br>
         </div>
         <div class="question">
-            <h3>How are the teachers responding to the students?</h3>
-            <textarea name="response" cols="60" rows="5" placeholder="Write Your response here"></textarea>
+            <h3>How are the teachers responding to the students?<span style="color: red">*</span></h3>
+            <textarea name="response" cols="60" rows="5" placeholder="Write Your response here" required>     </textarea>
         </div>
         <div class="question">
-            <h3>Are the students lacking any interactive sessions due to the digital classes?</h3>
-            <input type="radio" name="interaction" id="yes" value="Yes">
+            <h3>Are the students lacking any interactive sessions due to the digital classes?<span style="color: red">*</span></h3>
+            <input type="radio" name="interaction" id="yes" value="Yes" required>
             <label for="yes">Yes</label><br>
-            <input type="radio" name="interaction" id="no" value="No">
+            <input type="radio" name="interaction" id="no" value="No" required>
             <label for="no">No</label><br>
         </div>
     </div>
