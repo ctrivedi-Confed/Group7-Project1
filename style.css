@@ -1,0 +1,124 @@
+body {
+	background-color: #fefefe;
+}
+
+/* Navbar */
+h3 {
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+.question{
+
+	border: 2px solid #999;
+	padding-bottom: 20px;
+	margin: 20px 0;
+
+}
+
+.questions,
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+#container {
+	padding-top: 50px;
+}
+
+textarea{
+	margin: 0 5%;
+	width: 90%;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.next{
+	float: right;
+	background-color: darkblue;
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.next:hover {
+	cursor: pointer;
+}
+
+/* Navbar */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 8%;
+	background-color: black;
+	width: 100%;
+}
+
+nav {
+	width: 80%;
+	margin: 10px auto;
+	padding: 10px 0;
+}
+
+nav .right ul {
+	list-style: none;
+}
+
+nav .right {
+	float: right;
+}
+
+nav .right ul li {
+	display: inline;
+}
+
+nav .left {
+	float: left;
+	color: white;
+	text-decoration: none;
+}
+
+nav a {
+	padding:10px 20px;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+}
+
+nav a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* about us */
+#info {
+	font-size: 1.1rem;
+}
+
+.repo {
+	font-size: 1.1rem;
+	border: 2px solid #999;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.repo p {
+	text-align: center;
+}
+
+.member {
+	border: 2px solid #999;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.member ul li {
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.05rem;
+}
