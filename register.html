@@ -9,7 +9,7 @@
     <div class="container">
         <h1>Register, to take part in our latest surveys.</h1>
         <div class="form">
-            <form action="index.html" type="POST">
+            <form action="index.html" onclick="validateRegisterForm(event)" type="POST">
                 <label for="email">E-mail</label>
                 <br>
                 <input type="email" id="email" placeholder="User@host.com">
@@ -39,7 +39,7 @@
                 <br>
                 <input type="text" id="stname" placeholder="Street Name">
                 <br>
-                <label for="comp">Complement</label>
+                <label for="comp">Complement (Optional)</label>
                 <br>
                 <input type="text" id="comp" placeholder="Complement (optional)">
                 <br>
@@ -65,5 +65,7 @@
             </form>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
