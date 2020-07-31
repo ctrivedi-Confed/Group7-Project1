@@ -1,12 +1,15 @@
 // validating user inputs in login and register forms
-function validateLoginForm(e) {
+function validateRegisterForm(e) {
     e.preventDefault();
 
-    var email = document.getElementById("email").value;
     var pass = document.getElementById("pass").value;
+    var pass2 = document.getElementById("pass2").value;
+    var error = document.getElementById("error");
 
-    if (email === "" || pass === "") {
-        document.getElementById("error").innerHTML = "Please fill out all the fields and enter valid email address.";
+    if (pass2 !== pass) {
+        error.innerHTML = "The passwords must match.";
+    } else if (pass.length < 8) {
+        error.innerHTML = "Password must be at least 8 characters long.";
     } else {
         window.location.href = "index.html";
     }

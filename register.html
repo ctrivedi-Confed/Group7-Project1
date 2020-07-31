@@ -10,56 +10,57 @@
     <div class="container">
         <h1>Register, to take part in our latest surveys.</h1>
         <div class="form">
-            <form action="index.html" onclick="validateRegisterForm(event)" type="POST">
-                <label for="email">E-mail</label>
+            <form action="index.html" onsubmit="validateRegisterForm(event)" type="POST">
+                <label for="email">E-mail<span style="color: red">*</span></label>
                 <br>
-                <input type="email" id="email" placeholder="User@host.com">
+                <input type="email" id="email" placeholder="User@host.com" required>
                 <br>
-                <label for="pass">Password</label>
+                <label for="pass">Password<span style="color: red">*</span></label>
                 <br>
-                <input type="password" id="pass" placeholder="Password">
+                <input type="password" id="pass" placeholder="Password" required>
                 <br>
-                <label for="pass2">Confirm Password</label>
+                <label for="pass2">Confirm Password<span style="color: red">*</span></label>
                 <br>
-                <input type="password" id="pass2" placeholder="Confirm Password">
+                <input type="password" id="pass2" placeholder="Confirm Password" required>
                 <br>
-                <label for="name">Full Name</label>
+                <label for="name">Full Name<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="name" placeholder="John Doe">
+                <input type="text" id="name" placeholder="John Doe" required>
                 <br>
-                <label for="bday">Birth Date</label>
+                <label for="bday">Birth Date<span style="color: red">*</span></label>
                 <br>
-                <input type="date" id="bday" placeholder="MM/DD/YYYY">
+                <input type="date" id="bday" placeholder="MM/DD/YYYY" required>
                 <br>
-                <h3>Address</h3>
-                <label for="stn">Street No</label>
+                <h2>Address</h2>
+                <label for="stn">Street No<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="stn" placeholder="Street #">
+                <input type="text" id="stn" placeholder="Street #" required>
                 <br>
-                <label for="stname">Street Name</label>
+                <label for="stname">Street Name<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="stname" placeholder="Street Name">
+                <input type="text" id="stname" placeholder="Street Name" required>
                 <br>
                 <label for="comp">Complement (Optional)</label>
                 <br>
                 <input type="text" id="comp" placeholder="Complement (optional)">
                 <br>
-                <label for="city">City</label>
+                <label for="city">City<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="city" placeholder="City Name">
+                <input type="text" id="city" placeholder="City Name" required>
                 <br>
-                <label for="prov">Province</label>
+                <label for="prov">Province<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="prov" placeholder="Province Name">
+                <input type="text" id="prov" placeholder="Province Name" required>
                 <br>
-                <label for="country">Country</label>
+                <label for="country">Country<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="country" placeholder="Country Name">
+                <input type="text" id="country" placeholder="Country Name" required>
                 <br>
-                <label for="post">Postal Code</label>
+                <label for="post">Postal Code<span style="color: red">*</span></label>
                 <br>
-                <input type="text" id="post" placeholder="Postal Code">
+                <input type="text" id="post" placeholder="Postal Code" required>
                 <br>
+                <p id="error" style="color: red;"></p>
                 <button type="submit">Register</button>
                 <br><br>
                 <a href="login.html">Log in?</a>
